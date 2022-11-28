@@ -355,7 +355,7 @@ while True:
             time.sleep(0.025)
             display.show()
         if select is 2:
-            roll(20)
+            roll(4)
             display.show()
             time.sleep(0.025)
         if select is 3:
@@ -369,7 +369,8 @@ while True:
         if select is 7:
             luck_buff()
         if select is 8:
-            hell()
+            i2c.unlock()
+            __import__("/apps/" + apps[1])
 
     print(s)
     print(r)
