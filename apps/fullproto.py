@@ -29,7 +29,7 @@ b_roll = random.randint(0, len(c.baground) - 1)
 r = "Race: " + c.race[r_roll]
 bag = "BG: " + c.baground[b_roll]
 cl = c.clas[c_roll]
-
+displayio.release_displays()
 
 a = DigitalInOut(board.A0)
 a.direction = Direction.INPUT
